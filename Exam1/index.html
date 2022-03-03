@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container" style="width: 50%; padding:25px;">
+        <img src="" alt="" id="large" class="img-thumbnail">
+       
+        <form action="">
+            <div class="form-group">
+                <label for="images">Prints</label>
+                <select class="form-control" id="images" style="width:350px">
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="fName">Full Name</label>
+                <input type="text" style="width:350px" class="form-control" id="fName">
+            </div>
+
+            <div class="form-group">
+                <label for="qty">Quantity</label>
+                <select class="form-control" id="qty" style="width:350px">
+                    <script>
+                        for (var i = 1; i < 11; i++)
+                        {
+                            document.write("<option value='" + i + "'>" + i + "</option>" );
+                        }
+                    </script>
+                </select>
+            </div>
+            <input class="btn btn-primary" type="button" value="order" id="order">
+        </form>
+        <div id="ordered"></div>
+
+    </div>
+   
+    <script src="app.js"></script>
+</body>
+</html>
